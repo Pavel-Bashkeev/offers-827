@@ -1,0 +1,49 @@
+.order {
+  
+  &__title {
+    font: 'italic'400 20px/26px $font;
+    margin-bottom: 20px;
+    max-width: 275px;
+  }
+  &-text{
+    font: 700 25px/26px $font;
+    color: $black;
+    margin-bottom: 20px;
+    max-width: 275px;
+  }
+}
+
+.order-price {
+  margin-bottom: 45px;
+  &__inner {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+
+    .price-old {
+      color: $black;
+      font: 900 20px/30px $font;
+      position: relative;
+      text-decoration: line-through;
+      margin-bottom: 10px;
+    }
+
+    .price-new {
+      font: 900 50px/50px $font;
+      color: $black;
+    }
+  }
+}
+.discount{
+  width: 115px;
+  height: 115px;
+  background-image: url('../images/dest/discount-bg.png');
+  @extend %bg-cover;
+  right: 46px;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 35px/46px $font;
+  color: $white;
+}

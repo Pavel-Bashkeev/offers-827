@@ -1,0 +1,20 @@
+.companion{
+  padding: 31px 30px;
+  background-color: #004B8E;
+  &-info{
+    margin: 0 0 25px;
+    &__box{
+      width: 70px;
+      margin-right: 20px;
+    }
+    &__name{
+      font: 700 25px / 30px $font;
+      color: $white;
+      max-width: 210px;
+    }
+  }
+  &-descr{
+    font: 400 20px / 26px $font;
+    color: $white;
+  }
+}

@@ -1,0 +1,26 @@
+.test{
+  background-color: #004B8E;
+  padding: 30px 0 40px;
+  &-img{
+    max-width: 210px;
+    margin: 0 auto 25px;
+  }
+  &__title{
+    max-width: 300px;
+    font: 700 27px/31px $font;
+    color: $white;
+    margin-bottom: 35px;
+  }
+}
+.test-list{
+  padding: 0 30px;
+  &__item{
+    color: $white;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    .tt-a{
+      color: inherit;
+    }
+  }
+}

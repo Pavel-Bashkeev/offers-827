@@ -1,0 +1,114 @@
+.hero {
+  &-action {
+    margin-top: auto;
+
+    &__time {
+      padding: 9px 33px 5px 26px;
+      font: 400 20px/24px $font;
+      color: $white;
+    }
+
+    &__text {
+      padding: 7px 16px 6px 15px;
+      background-color: #fff;
+      color: $black;
+      font: 400 20px/24px $font;
+    }
+  }
+
+  &-descr {
+    padding: 35px 30px;
+    font: 700 30px/35px $font;
+    color: $white;
+  }
+
+  &-info {
+    font: 20px / 26px $font;
+    padding: 40px 30px;
+    background-color: #757575;
+    color: $white;
+  }
+  &-text{
+    padding: 56px 30px;
+    color: $black;
+    &__item{
+      &:not(:last-child){
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.hero[data-hero=pt] {
+  .hero-box {
+    .hero-action {
+      &__time {
+        background-color: #0086FF;
+      }
+    }
+
+  }
+
+  .hero-descr {
+    background-color: #0086FF;
+  }
+}
+
+.hero[data-hero=es],
+.hero[data-hero=gr] {
+  .hero-box {
+    .hero-action {
+      &__time {
+        background-color: #1F292E;
+      }
+    }
+  }
+
+  .hero-descr {
+    background-color: #1F292E;
+  }
+}
+
+.hero[data-hero=it] {
+  .hero-box {
+    .hero-action {
+      &__time {
+        background-color: #00539F;
+      }
+    }
+
+  }
+
+  .hero-descr {
+    background-color: #00539F;
+  }
+}
+
+.hero[data-hero=ro] {
+  .hero-box {
+    .hero-action {
+      &__time {
+        background-color: #1F292E;
+      }
+    }
+  }
+
+  .hero-descr {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.hero[data-hero=bg] {
+  .hero-box {
+    .hero-action {
+      &__time {
+        background-color: $black;
+      }
+    }
+  }
+
+  .hero-descr {
+    background-color: $black;
+  }
+}

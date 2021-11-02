@@ -1,0 +1,17 @@
+.talk-container{
+  margin-bottom: 50px;
+}
+.talk-question{
+  &__text{
+    color: #004B8E;
+  }
+  margin-bottom: 45px;
+}
+.talk-answer{
+  margin-bottom: 45px;
+  &__text{
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}

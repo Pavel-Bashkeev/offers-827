@@ -1,0 +1,17 @@
+@import '../../node_modules/reset-css/sass/reset';
+@import './settings/classFrame';
+@import './settings/vars';
+@import './assets/mixins';
+@import './settings/fonts';
+@import './settings/global';
+
+
+@import './components/header';
+@import './components/hero';
+@import './components/talk';
+@import './components/presentation';
+@import './components/test';
+@import './components/result';
+@import './components/order';
+@import './components/form';
+@import './components/companion';

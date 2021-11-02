@@ -1,0 +1,59 @@
+.header{
+  min-height: 75px;
+  &-logo{
+    width: 50%;
+
+  }
+  &-action{
+    padding-right: 30px;
+    width: 50%;
+    &__link{
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+    }
+  }
+}
+header[data-header=pt]{
+  background-color: #1F292E;
+  .header-logo{
+    background-color: #0086FF;
+    min-height: inherit;
+  }
+}
+header[data-header=es]{
+  background-color: #1F292E;
+  .header-logo{
+    background-color: inherit;
+    padding-left: 30px;
+    justify-content: flex-start;
+  }
+}
+header[data-header=it]{
+  background-color: #fff;
+  .header-logo{
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+header[data-header=gr]{
+  background-color: #1F292E;
+  .header-logo{
+    justify-content: flex-start;
+    padding-left:30px;
+  }
+}
+header[data-header=ro]{
+  background-color: #fff;
+  .header-logo{
+    justify-content: flex-start;
+    padding-left:30px;
+  }
+}
+header[data-header=bg]{
+  background-color: #fff;
+  .header-logo{
+    justify-content: flex-start;
+    padding-left:30px;
+  }
+}
