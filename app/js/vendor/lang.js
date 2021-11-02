@@ -48,22 +48,20 @@ window.addEventListener('DOMContentLoaded', () => {
   Number(htmlDoctorVersion) <= Object.keys(doctorVersionCompanion).length ? doctorImgCompanion.src = doctorVersionCompanion[htmlDoctorVersion] : doctorImgCompanion.src = doctorVersion[1];
 
 
-  Object.keys(logoLang).map(item => {
-    if (item != htmlLang) {
-      document.querySelector('html').lang = 'pt';
-      document.querySelector('.header').dataset.header = 'pt';
-      document.querySelector('.hero').dataset.hero = 'pt';
-      logoImg.src = logoLang['pt'];
-      actionIcon.src = actionIcons['pt'];      
-    } else {
-      logoImg.src = logoLang[htmlLang];
-      actionIcon.src = actionIcons[htmlLang];
-      document.querySelector('.header').dataset.header = htmlLang;
-      document.querySelector('.hero').dataset.hero = htmlLang;
-    }
+  Object.keys(logoLang).forEach(item => {
+    if (item == htmlLang) {
+      console.log(item == htmlLang)
+      mainAction(htmlLang);
+    } 
   })
 
 
+  function mainAction(lang) {
+    logoImg.src = logoLang[lang];
+    actionIcon.src = actionIcons[lang];
+    document.querySelector('.header').dataset.header = lang;
+    document.querySelector('.hero').dataset.hero = lang;
+  }
 
   function currentLogoGeo(lang) {
     return `./images/dest/header/${lang}/header-logo.png`
